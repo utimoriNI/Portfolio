@@ -1,0 +1,145 @@
+// variable start
+$main-text: #333;
+$main-green: #86ab31;
+$large-margin: 150px;
+$medium-margin: 75px;
+$small-margin: 40px;
+$sp-margin: 20px;
+// variable end
+
+body {
+    color: $main-text;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1;
+    padding-top: 65px;
+
+    @include mq(sp) {
+        text-align: center;
+    }
+
+    .en {
+        font-family: futura-pt, sans-serif;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: 800;
+        color: $main-green;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    h2 {
+        font-size: 46px;
+        font-weight: 300;
+        border-bottom: $main-green solid 3px;
+        margin-bottom: $medium-margin;
+
+        @include mq(sp) {
+            margin-bottom: $small-margin;
+        }
+    }
+    // global end
+
+    // header start
+    header {
+        top: 0;
+        width: 100%;
+        position: fixed;
+        background-color: #fff;
+        z-index: 5;
+        height: 65px;
+        display: flex;
+        padding: 5px 0;
+        box-shadow: 0 4px 8px 0 rgba($color: #286b4c, $alpha: 0.15);
+
+        .header-wrap {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+            @include mq(sp) {
+                width: 90%;
+            }
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                font-size: 20px;
+                font-weight: 500;
+
+                @include mq(sp) {
+                    font-size: 18px;
+                }
+                a {
+                    color: $main-text;
+                }
+
+                .border {
+                    border-bottom: $main-green solid 3px;
+                }
+
+                &:first-child {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+    // header end
+
+    footer {
+        width: 100%;
+        height: 200px;
+        background-color: #eef3f0;
+        padding: $small-margin 0;
+
+        .footer-wrap {
+            width: 85%;
+            margin: 0 auto;
+
+            h4 {
+                font-size: 24px;
+                font-weight: 400;
+                border-bottom: $main-green solid 2px;
+                margin-bottom: 20px;
+                padding-bottom: 4px;
+            }
+
+            ul {
+                display: flex;
+                margin-bottom: 20px;
+
+                @include mq(sp) {
+                    justify-content: center;
+                }
+
+                li {
+                    color: $main-text;
+                    font-size: 20px;
+                    padding-left: 100px;
+
+                    @include mq(sp) {
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                    }
+
+                    a {
+                        color: inherit;
+                    }
+                }
+            }
+
+            h1 {
+                text-align: right;
+            }
+        }
+    }
+    // footer end
+}

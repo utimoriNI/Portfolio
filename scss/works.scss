@@ -1,0 +1,446 @@
+@import "mixin"; //media queries
+@import "style"; //common style
+
+body {
+    // tab start
+    .tab {
+        border-bottom: 1px solid #afafaf;
+        margin-bottom: $medium-margin;
+
+        .tab-item {
+            display: inline-block;
+            border: 1px solid transparent;
+            border-bottom: none;
+            border-radius: 2px 2px 0 0;
+            margin: 0 0 -1px;
+
+            &:hover {
+                border-color: #afafaf;
+            }
+
+            a {
+                display: block;
+                width: 150px;
+                padding: 15px 10px;
+                text-align: center;
+                font-weight: 300;
+                color: #a0a0a0;
+
+                @include mq(sp) {
+                    width: 90px;
+                    padding: 10px 0;
+                    font-size: 14px;
+                    line-height: 1.4;
+                }
+            }
+
+            &.active {
+                border-color: #afafaf;
+                background-color: #fff;
+
+                a {
+                    color: $main-text;
+                }
+            }
+        }
+    }
+    // tab end
+
+    // modal start
+
+    // modal-animation
+
+    .modal-enter-from,
+    .modal-leave-to {
+        opacity: 0;
+    }
+
+    .modal-enter-active,
+    .modal-leave-active {
+        transition: opacity 1000ms ease;
+    }
+
+    .modal-enter-to,
+    .modal-leave-from {
+        opacity: 1;
+    }
+
+    #overlay {
+        z-index: 5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        align-items: center;
+        justify-content: center;
+        display: none; // 初期状態は非表示
+
+        // 画面のロードが終わったらモーダルを表示させる
+        &.loaded {
+            display: flex;
+        }
+
+        // modal-window start
+        .modal-window {
+            z-index: 7;
+            width: 90%;
+            height: 95vh;
+            padding: 25px;
+            background-color: #ffffff;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+
+            @include mq(tab) {
+                overflow-y: auto;
+                overflow-y: scroll;
+            }
+
+            @include mq(sp) {
+                overflow-y: auto;
+                overflow-y: scroll;
+            }
+
+            #close {
+                position: absolute;
+                font-size: 30px;
+                top: 25px;
+                right: 25px;
+                cursor: pointer;
+            }
+
+            .web {
+                position: absolute;
+                bottom: 50px;
+                right: 50px;
+
+                @include mq(tab) {
+                    position: relative;
+                    bottom: auto;
+                    right: auto;
+                    margin-top: 30px;
+                }
+
+                @include mq(sp) {
+                    position: relative;
+                    bottom: auto;
+                    right: auto;
+                    margin-top: 30px;
+                }
+
+                a {
+                    display: block;
+                    width: 240px;
+                    height: auto;
+                    padding: 15px 40px;
+                    margin: 0 auto;
+                    border: 3px solid $main-green;
+                    border-radius: 100vh;
+                    color: #5d8502;
+                    font-weight: 500;
+
+                    &:hover {
+                        border: 3px solid transparent;
+                        background-color: $main-green;
+                        color: #fff;
+                        transition: 350ms;
+                    }
+
+                    i {
+                        display: inline-block;
+                        margin-left: 20px;
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            // image-column start
+            .carousel {
+                display: flex;
+                height: 95%;
+                align-items: center;
+
+                @include mq(tab) {
+                    height: 90%;
+                }
+
+                button {
+                    border: none;
+                    background-color: rgba($color: #000000, $alpha: 0);
+                }
+
+                .btn-left,
+                .btn-right {
+                    z-index: 10;
+                    opacity: 0.7;
+
+                    i {
+                        display: inline-block;
+                        width: 40px;
+                        font-size: 36px;
+                        color: #666;
+                    }
+                }
+
+                .slider {
+                    margin: 0 auto;
+
+                    @include mq(tab) {
+                        height: 90%;
+                    }
+
+                    @include mq(sp) {
+                        height: 90%;
+                    }
+
+                    img {
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            // image-column end
+
+            // contents-column start
+            #modal-contents {
+                height: 90%;
+
+                @include mq(tab) {
+                    height: auto;
+                }
+
+                @include mq(sp) {
+                    height: auto;
+                }
+
+                // contents-header start
+                .modal-title {
+                    font-size: 42px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    white-space: pre-wrap;
+                    line-height: 1.2;
+
+                    @include mq(sp) {
+                        font-size: 34px;
+                        text-align: left;
+                    }
+                }
+
+                .modal-subtitle {
+                    font-size: 16px;
+                    color: #424242;
+                    font-weight: 300;
+                    margin-bottom: $small-margin;
+
+                    @include mq(sp) {
+                        text-align: left;
+                    }
+                }
+                // contents-header end
+
+                .tab {
+                    margin-bottom: $small-margin;
+
+                    li {
+                        width: 50%;
+
+                        a {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+
+                // tab-contents start
+                .tab-contents {
+                    height: 100%;
+
+                    .tab-panel {
+                        width: 100%;
+                        height: 60%;
+                        padding: 0 15px;
+
+                        @include mq(pc) {
+                            overflow-y: auto;
+                            overflow-y: scroll;
+                        }
+
+                        @include mq(tab) {
+                            padding-left: 0;
+                            margin: 0 auto;
+                        }
+
+                        // information start
+                        .information-item {
+                            margin-bottom: $small-margin;
+
+                            @include mq(tab) {
+                                text-align: center;
+                            }
+
+                            @include mq(sp) {
+                                width: 100%;
+                                text-align: center;
+                                display: block;
+                            }
+
+                            h4 {
+                                display: inline-block;
+                                font-size: 22px;
+                                font-weight: 300;
+                                padding-bottom: 8px;
+                                margin-bottom: 15px;
+                                border-bottom: 1px solid #ccc;
+
+                                @include mq(sp) {
+                                    width: 100%;
+                                }
+
+                                i {
+                                    display: inline-block;
+                                    padding-right: 10px;
+                                    color: $main-green;
+                                }
+                            }
+
+                            ul {
+                                @include mq(sp) {
+                                    display: inline-block;
+
+                                    li {
+                                        list-style: none;
+                                        margin-bottom: 8px;
+                                    }
+                                }
+                            }
+
+                            p {
+                                @include mq(sp) {
+                                    display: inline-block;
+                                }
+                            }
+
+                            li,
+                            p {
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: #505050;
+                                padding-left: 15px;
+
+                                @include mq(sp) {
+                                    width: auto;
+                                    text-align: left;
+                                    padding-left: 0px;
+                                }
+                            }
+                        }
+                        // information end
+
+                        // comment start
+                        .comment {
+                            font-size: 18px;
+                            line-height: 2;
+                            white-space: pre-wrap;
+                            text-align: left;
+                        }
+                        // comment end
+                    }
+                }
+                // tab-contents end
+            }
+            // contents-column end
+        }
+    }
+    // modal end
+
+    // contents start
+    .contents-wrapper {
+        width: 1024px;
+        padding: 100px 0;
+        margin: 0 auto;
+
+        @include mq(tab) {
+            width: 769px;
+        }
+
+        @include mq(sp) {
+            width: 375px;
+        }
+
+        .works {
+            .work-card {
+                cursor: pointer;
+                margin-bottom: $medium-margin;
+
+                &:hover {
+                    transform: scale(1.04, 1.04);
+                    box-shadow: 0px 0px 10px 4px rgba($color: #286b4c, $alpha: 0.15);
+                    transition: 1s all;
+                }
+
+                .thumbnail {
+                    margin-bottom: 15px;
+                    text-align: center;
+                    border: 1px solid #bcdac8;
+                    border-radius: 4px;
+                    padding: 15px 0;
+
+                    img {
+                        height: 500px;
+                        width: auto;
+                        object-fit: contain;
+
+                        @include mq(tab) {
+                            height: 400px;
+                        }
+                    }
+                }
+                .category {
+                    color: #666;
+                    margin-bottom: 5px;
+
+                    @include mq(tab) {
+                        font-size: 14px;
+                    }
+
+                    @include mq(sp) {
+                        font-size: 14px;
+                    }
+                }
+
+                .work-title {
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #434343;
+                    margin-bottom: 5px;
+                    line-height: 1.4;
+
+                    @include mq(tab) {
+                        font-size: 20px;
+                    }
+
+                    @include mq(sp) {
+                        font-size: 20px;
+                    }
+                }
+
+                .subtitle {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.4;
+
+                    @include mq(tab) {
+                        font-size: 14px;
+                    }
+
+                    @include mq(sp) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    // contents end
+}
