@@ -538,6 +538,8 @@ body #overlay .modal-window #modal-contents .tab-contents .tab-panel .informatio
 
 body #overlay .modal-window #modal-contents .tab-contents .tab-panel .comment {
   font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   line-height: 2;
   white-space: pre-wrap;
   text-align: left;
