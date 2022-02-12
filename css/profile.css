@@ -1,5 +1,5 @@
 body {
-  color: #333;
+  color: #373737;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1;
   padding-top: 65px;
@@ -91,7 +91,7 @@ body header ul li {
 }
 
 body header ul li a {
-  color: #333;
+  color: #373737;
 }
 
 body header ul li .border {
@@ -138,7 +138,7 @@ body footer .footer-wrap ul {
 }
 
 body footer .footer-wrap ul li {
-  color: #333;
+  color: #373737;
   font-size: 20px;
   padding-left: 100px;
 }
