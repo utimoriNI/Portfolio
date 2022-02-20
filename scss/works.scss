@@ -186,6 +186,7 @@ body {
 
                 .slider {
                     margin: 0 auto;
+                    height: 100%;
 
                     @include mq(tab) {
                         height: 90%;
