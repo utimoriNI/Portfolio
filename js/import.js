@@ -19,7 +19,7 @@ const works = [
         tools: ['Photoshop', 'Illustrator', 'Shopify', 'Liquid'],
         time: '約60時間',
         scopes: ['テンプレートの選定', '各ページのレイアウト', 'キービジュアル制作', 'ファビコン制作',],
-        url: 'https://xgkuefhkbdf7m99s-60168241336.shopifypreview.com',
+        url: 'https://rnyr6g1yp0cz33it-60168241336.shopifypreview.com',
         exp: `長期インターン先の自社ECサイトをShopifyを使って構築しました。
 このECサイトは、家の庭に置くようなベンチやテーブルといった商品を販売するECサイトです。
 エクステリア商品を取り扱うECサイトなので、青空の下の庭のような解放感を感じられる青と緑の組み合わせをメインカラーに使用しました。
