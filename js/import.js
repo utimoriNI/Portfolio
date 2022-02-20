@@ -144,7 +144,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
         tools: ['Photoshop',],
         time: '約12時間',
         scopes: ['デザイン制作',],
-        url: 'https://item.rakuten.co.jp/officemarche/10006026/',
+        url: 'https://item.rakuten.co.jp/officemarche/10006028/',
         exp: `楽天市場で使用している、ウッドデッキのパーツとセットが一覧できる特集ページへ遷移するバナーです。
 このバナーではウッドデッキの特集用の一覧ページがあることと、セットの種類の豊富さを伝えたいと思いました。
 
@@ -162,7 +162,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
         tools: ['Photoshop',],
         time: '約10時間',
         scopes: ['デザイン制作',],
-        url: 'https://item.rakuten.co.jp/officemarche/10006026/',
+        url: 'https://item.rakuten.co.jp/officemarche/10006028/',
         exp: `楽天市場で使用している、ウッドデッキの紹介をするためのポップです。
 アクセス分析によって、ウッドデッキの商品ページはモバイル端末からのアクセスが多いことが分かっていました。
 
@@ -182,7 +182,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
         tools: ['Photoshop',],
         time: '約14時間',
         scopes: ['デザイン制作', 'イラスト制作'],
-        url: 'https://item.rakuten.co.jp/officemarche/10006026/',
+        url: 'https://item.rakuten.co.jp/officemarche/10006028/',
         exp: `楽天市場で使用している、ウッドデッキのセット内容を紹介するためのポップです。
 セットでは最大4種類のパーツで構成されており、内容によっては情報量が多くなってしまうのでテキストのみだと注目度が下がってしまうと考えました。
 
