@@ -19,7 +19,7 @@ const works = [
         tools: ['Photoshop', 'Illustrator', 'Shopify', 'Liquid'],
         time: '約60時間',
         scopes: ['テンプレートの選定', '各ページのレイアウト', 'キービジュアル制作', 'ファビコン制作',],
-        url: 'https://rnyr6g1yp0cz33it-60168241336.shopifypreview.com',
+        url: 'https://05vsooq6g7bamlug-60168241336.shopifypreview.com',
         exp: `長期インターン先の自社ECサイトをShopifyを使って構築しました。
 このECサイトは、家の庭に置くようなベンチやテーブルといった商品を販売するECサイトです。
 エクステリア商品を取り扱うECサイトなので、青空の下の庭のような解放感を感じられる青と緑の組み合わせをメインカラーに使用しました。
@@ -201,7 +201,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
         tools: ['Photoshop', 'Illustrator',],
         time: '約10時間',
         scopes: ['デザイン制作',],
-        url: 'https://exteriorgarden.myshopify.com/products/ke-al-p40c?_pos=1&_sid=205c9e90e&_ss=r',
+        url: 'https://exteriorgarden.myshopify.com/products/ke-al-p40c?_pos=1&_sid=df3ed10ed&_ss=r',
         exp: `エクステリアガーデンで販売するアルミガーデンチェアの紹介用ポップです。
 このECサイトはモバイル端末からのアクセスが多くなることを予想したので、縦長のレイアウトで制作しました。
 この画像はショップのデザインに合わせて緑をメインカラーに使用し、ECサイトはシンプルなデザインを目指していたのでサイトに合わせてフラットなデザインにしました。
@@ -259,7 +259,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
         tools: ['CLIP STUDIO PAINT',],
         time: '約10時間',
         scopes: ['イラスト制作',],
-        url: 'https://item.rakuten.co.jp/officemarche/10006026/',
+        url: 'https://item.rakuten.co.jp/officemarche/10006028/',
         exp: `ウッドデッキのセットのレイアウト例を見せるためのイラストです。
 17種類のセットがあり、全てのセットのイラストを描くと時間がかかってしまうため4種類のパーツのイラストを制作して、
 それらを並べることで全てのセットのレイアウト例を作れるようにしました。

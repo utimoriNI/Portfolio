@@ -364,6 +364,7 @@ body #overlay .modal-window .carousel .btn-right i {
 
 body #overlay .modal-window .carousel .slider {
   margin: 0 auto;
+  height: 100%;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
