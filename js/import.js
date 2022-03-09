@@ -87,6 +87,31 @@ Vue.jsは、主にWorksページで使用しており、動的ページの実装
     },
     {
         id: 4,
+        category: category[0],
+        image: ['./images/works/ashiato_mockuup1.jpg',
+            './images/works/ashiato_mockuup2.jpg',
+            './images/works/ashiato_01.jpg',
+            './images/works/ashiato_02.jpg',
+            './images/works/ashiato_03.jpg',
+            './images/works/ashiato_04.jpg',
+            './images/works/ashiato_05.jpg',],
+        displayImage: 0,
+        title: 'Webアプリ あしあと デザインカンプ',
+        subtitle: '私が考案したWebアプリ「あしあと」のデザインカンプです。',
+        tools: ['Photoshop', 'Illustrator', 'XD',],
+        time: '約25時間',
+        scopes: ['ワイヤーフレーム制作', 'デザインカンプ制作', 'ロゴ制作'],
+        url: 'https://xd.adobe.com/view/b213b744-c7fe-4574-aea3-2fe7dca15473-e740/',
+        exp: `このWebアプリは、私の趣味である読書やイラスト制作中に感じたことを記録するためのWebアプリで、
+「自分の感情に愛情を」というコンセプトを基に考えました。
+そのため、自分が学んだことを記録するのではなく、自分の感情にフォーカスして記録をします。
+そして、記録した自分の感情を振り返ることで、自分の変化を可視化するWebアプリなので「あしあと」と名付けました。
+
+Webアプリのデザインは、自分の気持ちと向き合うための落ち着ける場所をイメージして制作しました。
+明朝体をメインに使ったり、明度が低く古風な色を使うことで和室のような静けさを感じさせるデザインにしました。`,
+    },
+    {
+        id: 5,
         category: category[1],
         image: ['./images/works/exterior_kv_w.jpg',
             './images/works/exterior_kv_m.jpg',],
@@ -110,7 +135,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
 モバイル用の画像では背景の画像をぼかすことでボタンの視認性を高めています。`
     },
     {
-        id: 5,
+        id: 6,
         category: category[1],
         image: ['./images/works/wooddeck_thum_01.jpg',
             './images/works/wooddeck_thum_02.jpg',
@@ -134,7 +159,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
 画像を配置しただけだと商品の形状的に角ばった印象が強くなっていたため、画像に輪郭をつけて視認性を高めるとともに親しみやすい印象を目指しました。`
     },
     {
-        id: 6,
+        id: 7,
         category: category[1],
         image: ['./images/works/wooddeck_pc.jpg',
             './images/works/wooddeck_sp.jpg',],
@@ -152,7 +177,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
 モバイル版の横長の画像ではセットに関するテキストを大きく配置できなかったので、特集のタイトルが目立つレイアウトにしています。`
     },
     {
-        id: 7,
+        id: 8,
         category: category[1],
         image: ['./images/works/wooddeck_point_01.jpg',
             './images/works/wooddeck_point_02.jpg',],
@@ -170,7 +195,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
 ウッドデッキのポップなので商品の色である茶色をメインカラーに使用して、サムネイル画像と同じように親しみやすい雰囲気を目指すために、色付きのアイコンを添えました。`
     },
     {
-        id: 8,
+        id: 9,
         category: category[1],
         image: ['./images/works/wooddeck_set_01.jpg',
             './images/works/wooddeck_set_02.jpg',
@@ -192,7 +217,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
 画像に添えた数字はフォントサイズは大きくウェイトは太くして、テキストは丸ゴシックを使用して読みやすいテキストを目指しました。`
     },
     {
-        id: 9,
+        id: 10,
         category: category[1],
         image: ['./images/works/aluminum.jpg'],
         displayImage: 0,
@@ -210,7 +235,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
 3つのポイントがあることが一目で分かるように、タイトルのテキストのジャンプ率を調節し3という数字だけにドロップシャドウをかけてそこだけに立体感を持たせています。`
     },
     {
-        id: 10,
+        id: 11,
         category: category[1],
         image: ['./images/works/glass_kv.jpg',],
         displayImage: 0,
@@ -228,7 +253,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
 そのため、色には清潔感を出すための青を選び、背景には幾何学模様を採用して画面全体の情報量を上げつつ規則的できれいな画像にしました。`
     },
     {
-        id: 11,
+        id: 12,
         category: category[1],
         image: ['./images/works/table.jpg',],
         displayImage: 0,
@@ -245,7 +270,7 @@ PC用のページとモバイル端末用のページで表示する画像を変
 また、カラーバリエーションがあることを伝えることで、店内やオフィス内の雰囲気に合わせやすいこともアピールしました。`
     },
     {
-        id: 12,
+        id: 13,
         category: category[2],
         image: ['./images/works/parts_01.jpg',
             './images/works/parts_02.jpg',
