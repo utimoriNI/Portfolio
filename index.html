@@ -185,10 +185,10 @@
                     <section class="skills-list">
                         <h3><i class="fas fa-cogs"></i>スキル一覧</h3>
 
-                        <div id="skill-cards" class="columns is-multiline is-variable is-8-tablet">
+                        <div id="skill-cards" class="columns is-multiline is-mobile is-variable is-8-tablet">
 
                             <!-- skills配列の要素を1つずつ取り出して属性を代入する -->
-                            <section class="skill-card column is-one-third-desktop is-half-tablet"
+                            <section class="skill-card column is-one-third-desktop is-half-tablet is-half-mobile"
                                 v-for="skill in skills">
                                 <p class="skill-icon">
                                     <img :src="skill.image" v-bind:alt='`${skill.name}のアイコン画像`'>

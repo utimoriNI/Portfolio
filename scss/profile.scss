@@ -171,7 +171,7 @@ body {
 
                 @include mq(sp) {
                     line-height: 1.4;
-                    margin-bottom: 10px;
+                    margin-bottom: 32px;
                 }
 
                 i {
@@ -273,7 +273,7 @@ body {
 
                 .skill-description {
                     white-space: pre-wrap;
-                    font-size: 18px;
+                    font-size: 14px;
                     line-height: 1.55;
                 }
             }
